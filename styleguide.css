@@ -1,0 +1,91 @@
+:root {
+    --cinza-1: rgba(105, 105, 105, 1);
+    --t1-font-family: "Nunito", sans-serif;
+    --t1-font-weight: 700;
+    --t1-font-size: 32px;
+    --t1-letter-spacing: 0px;
+    --t1-line-height: normal;
+    --t1-font-style: normal;
+    --t2-font-family: "Nunito", sans-serif;
+    --t2-font-weight: 700;
+    --t2-font-size: 24px;
+    --t2-letter-spacing: 0px;
+    --t2-line-height: normal;
+    --t2-font-style: normal;
+
+    --texto-font-family: "Nunito", sans-serif;
+    --texto-font-weight: 500;
+    --texto-font-size: 16px;
+    --texto-letter-spacing: 0px;
+    --texto-line-height: normal;
+    --texto-font-style: normal;
+    --texto-bold-font-family: "Nunito", sans-serif;
+    --texto-bold-font-weight: 700;
+    --texto-bold-font-size: 16px;
+    --texto-bold-letter-spacing: 0px;
+    --texto-bold-line-height: normal;
+    --texto-bold-font-style: normal;
+
+    --link-font-family: "Nunito", sans-serif;
+    --link-font-weight: 700;
+    --link-font-size: 16px;
+    --link-letter-spacing: 0px;
+    --link-line-height: normal;
+    --link-font-style: normal;
+
+    --bot-o-font-family: "Nunito", sans-serif;
+    --bot-o-font-weight: 500;
+    --bot-o-font-size: 20px;
+    --bot-o-letter-spacing: 0px;
+    --bot-o-line-height: normal;
+    --bot-o-font-style: normal;
+
+    /*dropdown*/
+    --op-o-dropdown-font-family: "Nunito", sans-serif;
+    --op-o-dropdown-font-weight: 500;
+    --op-o-dropdown-font-size: 15px;
+    --op-o-dropdown-letter-spacing: 0px;
+    --op-o-dropdown-line-height: normal;
+    --op-o-dropdown-font-style: normal;
+
+    --mobile-t1-font-family: "Nunito", sans-serif;
+    --mobile-t1-font-weight: 700;
+    --mobile-t1-font-size: 24px;
+    --mobile-t1-letter-spacing: 0px;
+    --mobile-t1-line-height: normal;
+    --mobile-t1-font-style: normal;
+    --mobile-t2-font-family: "Nunito", sans-serif;
+    --mobile-t2-font-weight: 700;
+    --mobile-t2-font-size: 20px;
+    --mobile-t2-letter-spacing: 0px;
+    --mobile-t2-line-height: normal;
+    --mobile-t2-font-style: normal;
+
+    --mobile-texto-font-family: "Nunito", sans-serif;
+    --mobile-texto-font-weight: 500;
+    --mobile-texto-font-size: 13px;
+    --mobile-texto-letter-spacing: 0px;
+    --mobile-texto-line-height: normal;
+    --mobile-texto-font-style: normal;
+    --mobile-texto-bold-font-family: "Nunito", sans-serif;
+    --mobile-texto-bold-font-weight: 700;
+    --mobile-texto-bold-font-size: 13px;
+    --mobile-texto-bold-letter-spacing: 0px;
+    --mobile-texto-bold-line-height: normal;
+    --mobile-texto-bold-font-style: normal;
+
+    --mobile-link-font-family: "Nunito", sans-serif;
+    --mobile-link-font-weight: 700;
+    --mobile-link-font-size: 13px;
+    --mobile-link-letter-spacing: 0px;
+    --mobile-link-line-height: normal;
+    --mobile-link-font-style: normal;
+
+    --mobile-bot-o-font-family: "Nunito", sans-serif;
+    --mobile-bot-o-font-weight: 700;
+    --mobile-bot-o-font-size: 14px;
+    --mobile-bot-o-letter-spacing: 0px;
+    --mobile-bot-o-line-height: normal;
+    --mobile-bot-o-font-style: normal;
+    --sombra-header: 0px 12px 14.699999809265137px 0px rgba(0, 0, 0, 0.35);
+}
