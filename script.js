@@ -103,10 +103,3 @@ document.querySelectorAll(".al").forEach(n => n. addEventListener("click", () =>
     navMenu.classList.remove('active');
 }))
 
-
-let planoAbsoluto1 
-let planoAbsoluto2 
-let planoAbsoluto3 
-let planoSupremo1 
-let planoSupremo2 
-let planoSupremo3 
