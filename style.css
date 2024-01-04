@@ -1,8 +1,4 @@
-        /*.......................................................................................Navegação...........................................................................*/
-
-
-
-
+        /*..............Navegação.................*/
 #header{
     display: flex;
     max-width: 100%;
@@ -106,20 +102,24 @@
     transition: all 0.3s ease-in-out;
 }
 
-
-
-/*...............................................................................................cards.................................................................................................... */
-
-
-
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:baseline;
+  margin: auto;
+}
+/*..........cards.............. */
 
 .card{
+  min-height: 400px;
     display: center;
     flex-direction: column;
     flex-wrap: wrap;
     align-self: center;
     padding: 32px;
     position: flex;
+    align-items: baseline;
     justify-content: space-between;
     flex: 1;
     align-self: stretch;
@@ -130,11 +130,8 @@
     box-sizing: border-box;
     box-shadow: 0px 4px 15.9px #00000021;
 }
-.slider {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: auto;
+.plan-desc {
+  position: block;
 }
 .card-title{
     position: flex;
@@ -160,6 +157,7 @@
 }
 .plans{
     flex-wrap: wrap;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -184,8 +182,10 @@
     --op-o-dropdown-font-style: normal;
 }
 .confirm{
+
     display: flex;
     align-self: center;
+    margin-top: auto;
     flex-direction: column;
     padding: 12px 16px;
     padding-top: 10px;
@@ -195,7 +195,6 @@
     border-color: #000000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     position: flex;
-    margin-top: 10px;
     font-family: var(--bot-o-font-family);
     font-weight: var(--bot-o-font-weight);
     color: #ffffff;
@@ -285,13 +284,526 @@
     padding-top: 8px ;
 }
 
+        /*        card1       */
+/*.card1{
+  display: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: center;
+  padding: 32px;
+  position: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-self: stretch;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 15.9px #00000021;
+}
+.card1 .slider {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: auto;
+}
+.card1 .card-title{
+  position: flex;
+  margin: 2px;
+  font-family: var(--t1-font-family);
+  font-weight: var(--t1-font-weight);
+  color: #000000;
+  font-size: var(--t1-font-size);
+  letter-spacing: var(--t1-letter-spacing);
+  line-height: var(--t1-line-height);
+  font-style: var(--t1-font-style);
+}
+.card1 .card-description{
+  position: relative;
+  align-self: stretch;
+  font-family: var(--texto-font-family);
+  font-weight: var(--texto-font-weight);
+  color: #000000;
+  font-size: var(--texto-font-size);
+  letter-spacing: var(--texto-letter-spacing);
+  line-height: var(--texto-line-height);
+  font-style: var(--texto-font-style);
+}
+.card1 .plans{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 30PX;
+  padding: 18px;
+  position: center;
+  align-self: center;
+  background-color: #f7f7f7;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #707070;
+  border-radius: 6px;
+  --op-o-dropdown-font-family: "Nunito", sans-serif;
+  --op-o-dropdown-font-weight: 500;
+  --op-o-dropdown-font-size: 15px;
+  --op-o-dropdown-letter-spacing: 0px;
+  --op-o-dropdown-line-height: normal;
+  --op-o-dropdown-font-style: normal;
+}
+.card1 .confirm{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  padding: 12px 16px;
+  padding-top: 10px;
+  background-color: #d3305b;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: flex;
+  margin-top: 100px;
+  font-family: var(--bot-o-font-family);
+  font-weight: var(--bot-o-font-weight);
+  color: #ffffff;
+  font-size: var(--bot-o-font-size);
+  letter-spacing: var(--bot-o-letter-spacing);
+  line-height: var(--bot-o-line-height);
+  font-style: var(--bot-o-font-style);
+}
+.card1 .confirm:hover{
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.card1 .price-info {
+  align-items:baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.card1 .price{
+  display:flex;
+  height: 51px;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card1 .price-value{
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+  font-family: "Nunito-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.card1 .price-per-month{
+  position: flex;
+  width: fit-content;
+  margin-top: -5px;
+  font-family: "Nunito-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.card1 .benefit{
+  display: flex;
+  align-items:baseline;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.card1 .benefit-info{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap:80px;
+position: flex;
+}
+.card1 .benefit-title{
+  position: flex;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--t2-font-family);
+  font-weight: var(--t2-font-weight);
+  color: #000000;
+  font-size: var(--t2-font-size);
+  letter-spacing: var(--t2-letter-spacing);
+  line-height: var(--t2-line-height);
+  font-style: var(--t2-font-style);
+}
+.card1 .link{
+  position: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: "Nunito-Bold", Helvetica;
+  font-weight: 700;
+  color: #d3305b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  padding-top: 8px ;
+}
 
+        /*        card       */
+/*.card2{
+display: center;
+flex-direction: column;
+flex-wrap: wrap;
+align-self: center;
+padding: 32px;
+position: flex;
+justify-content: space-between;
+flex: 1;
+align-self: stretch;
+background-color: #ffffff;
+border-radius: 16px;
+overflow: hidden;
+margin-bottom: 20px;
+box-sizing: border-box;
+box-shadow: 0px 4px 15.9px #00000021;
+}
+.card2 .slider {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: auto;
+}
+.card2 .card-title{
+position: flex;
+margin: 2px;
+font-family: var(--t1-font-family);
+font-weight: var(--t1-font-weight);
+color: #000000;
+font-size: var(--t1-font-size);
+letter-spacing: var(--t1-letter-spacing);
+line-height: var(--t1-line-height);
+font-style: var(--t1-font-style);
+}
+.card2 .card-description{
+position: relative;
+align-self: stretch;
+font-family: var(--texto-font-family);
+font-weight: var(--texto-font-weight);
+color: #000000;
+font-size: var(--texto-font-size);
+letter-spacing: var(--texto-letter-spacing);
+line-height: var(--texto-line-height);
+font-style: var(--texto-font-style);
+}
+.card2 .plans{
+flex-wrap: wrap;
+display: flex;
+flex-direction: column;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+width: 360px;
+align-items: center;
+justify-content: space-between;
+gap: 8px;
+margin-bottom: 30PX;
+padding: 18px;
+position: center;
+align-self: center;
+background-color: #f7f7f7;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-color: #707070;
+border-radius: 6px;
+--op-o-dropdown-font-family: "Nunito", sans-serif;
+--op-o-dropdown-font-weight: 500;
+--op-o-dropdown-font-size: 15px;
+--op-o-dropdown-letter-spacing: 0px;
+--op-o-dropdown-line-height: normal;
+--op-o-dropdown-font-style: normal;
+}
+.card2 .confirm{
+display: flex;
+align-self: center;
+flex-direction: column;
+padding: 12px 16px;
+padding-top: 10px;
+background-color: #d3305b;
+border-radius: 10px;
+border: 1px solid;
+border-color: #000000;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+position: flex;
+margin-top: 10px;
+font-family: var(--bot-o-font-family);
+font-weight: var(--bot-o-font-weight);
+color: #ffffff;
+font-size: var(--bot-o-font-size);
+letter-spacing: var(--bot-o-letter-spacing);
+line-height: var(--bot-o-line-height);
+font-style: var(--bot-o-font-style);
+}
+.card2 .confirm:hover{
+cursor: pointer;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.card2 .price-info {
+align-items:baseline;
+display: flex;
+justify-content: space-between;
+margin-bottom: 50px;
+}
+.card2 .price{
+display:flex;
+height: 51px;
+align-items: flex-end;
+flex-direction: column;
+justify-content: space-between;
+}
+.card2 .price-value{
+margin-top: -1px;
+position: relative;
+width: fit-content;
+font-family: "Nunito-Bold", Helvetica;
+font-weight: 700;
+color: #000000;
+font-size: 22px;
+letter-spacing: 0;
+line-height: normal;
+}
+.card2 .price-per-month{
+position: flex;
+width: fit-content;
+margin-top: -5px;
+font-family: "Nunito-Medium", Helvetica;
+font-weight: 500;
+color: #000000;
+font-size: 14px;
+letter-spacing: 0;
+line-height: normal;
+}
+.card2 .benefit{
+display: flex;
+align-items:baseline;
+flex-direction: column;
+justify-content: space-between;
+align-self: flex-end;
+box-sizing: border-box;
+max-width: 100%;
+}
+.card2 .benefit-info{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap:80px;
+position: flex;
+}
+.card2 .benefit-title{
+position: flex;
+width: fit-content;
+margin-top: -1px;
+font-family: var(--t2-font-family);
+font-weight: var(--t2-font-weight);
+color: #000000;
+font-size: var(--t2-font-size);
+letter-spacing: var(--t2-letter-spacing);
+line-height: var(--t2-line-height);
+font-style: var(--t2-font-style);
+}
+.card2 .link{
+position: flex;
+flex-direction: column;
+width: fit-content;
+font-family: "Nunito-Bold", Helvetica;
+font-weight: 700;
+color: #d3305b;
+font-size: 16px;
+letter-spacing: 0;
+line-height: normal;
+text-decoration: underline;
+padding-top: 8px ;
+}
 
-        /*......................................................................................Planos..........................................................................................*/
+        /*        card1       */
+/*.card3{
+  display: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: center;
+  padding: 32px;
+  position: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-self: stretch;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 15.9px #00000021;
+}
+.card3 .slider {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: auto;
+}
+.card3 .card-title{
+  position: flex;
+  margin: 2px;
+  font-family: var(--t1-font-family);
+  font-weight: var(--t1-font-weight);
+  color: #000000;
+  font-size: var(--t1-font-size);
+  letter-spacing: var(--t1-letter-spacing);
+  line-height: var(--t1-line-height);
+  font-style: var(--t1-font-style);
+}
+.card3 .card-description{
+  position: relative;
+  align-self: stretch;
+  font-family: var(--texto-font-family);
+  font-weight: var(--texto-font-weight);
+  color: #000000;
+  font-size: var(--texto-font-size);
+  letter-spacing: var(--texto-letter-spacing);
+  line-height: var(--texto-line-height);
+  font-style: var(--texto-font-style);
+}
+.card3 .plans{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 30PX;
+  padding: 18px;
+  position: center;
+  align-self: center;
+  background-color: #f7f7f7;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #707070;
+  border-radius: 6px;
+  --op-o-dropdown-font-family: "Nunito", sans-serif;
+  --op-o-dropdown-font-weight: 500;
+  --op-o-dropdown-font-size: 15px;
+  --op-o-dropdown-letter-spacing: 0px;
+  --op-o-dropdown-line-height: normal;
+  --op-o-dropdown-font-style: normal;
+}
+.card3 .confirm{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  padding: 12px 16px;
+  padding-top: 10px;
+  background-color: #d3305b;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: flex;
+  margin-top: 10px;
+  font-family: var(--bot-o-font-family);
+  font-weight: var(--bot-o-font-weight);
+  color: #ffffff;
+  font-size: var(--bot-o-font-size);
+  letter-spacing: var(--bot-o-letter-spacing);
+  line-height: var(--bot-o-line-height);
+  font-style: var(--bot-o-font-style);
+}
+.card3 .confirm:hover{
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.card3 .price-info {
+  align-items:baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.card3 .price{
+  display:flex;
+  height: 51px;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card3 .price-value{
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+  font-family: "Nunito-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.card3 .price-per-month{
+  position: flex;
+  width: fit-content;
+  margin-top: -5px;
+  font-family: "Nunito-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.card3 .benefit{
+  display: flex;
+  align-items:baseline;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.card3 .benefit-info{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap:80px;
+position: flex;
+}
+.card3 .benefit-title{
+  position: flex;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--t2-font-family);
+  font-weight: var(--t2-font-weight);
+  color: #000000;
+  font-size: var(--t2-font-size);
+  letter-spacing: var(--t2-letter-spacing);
+  line-height: var(--t2-line-height);
+  font-style: var(--t2-font-style);
+}
+.card3 .link{
+  position: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: "Nunito-Bold", Helvetica;
+  font-weight: 700;
+  color: #d3305b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  padding-top: 8px ;
+}
 
-
-
-
+        /*        Planos      */
  .frame-wrapper {
     display: flex;
     flex-direction: column;
@@ -751,13 +1263,7 @@
     height: 24px;
   }
 
-
-
-        /*.........................................................................................Entendendo os Benefícios...........................................................................*/
-
-
-
-
+        /*......Entendendo os Benefícios......*/
 .accordion-web {
     width: 1024;
     align-items: center;
@@ -1405,7 +1911,6 @@ main{
   padding: 0px;
   align-items: center;
   align-self: center;
-  margin-right: 300px;
 }
 .frame-wrapper{
   padding: 22px;
