@@ -100,6 +100,9 @@
     background-color: #000000;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .slider {
@@ -206,12 +209,27 @@
 .confirm:hover{
     cursor: pointer;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
   }
 .price-info {
     align-items:baseline;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+.price-info1 {
+  align-items:baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding-top: 55px;
+}
+.price-info2 {
+  align-items:baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding-top: 55px;
 }
 .price{
     display:flex;
@@ -227,14 +245,14 @@
     font-family: "Nunito-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 0;
     line-height: normal;
 }
 .price-per-month{
     position: flex;
     width: fit-content;
-    margin-top: -5px;
+    margin-top: 5px;
     font-family: "Nunito-Medium", Helvetica;
     font-weight: 500;
     color: #000000;
@@ -258,6 +276,7 @@
  gap:80px;
  position: flex;
 }
+
 .benefit-title{
     position: flex;
     width: fit-content;
@@ -281,7 +300,7 @@
     letter-spacing: 0;
     line-height: normal;
     text-decoration: underline;
-    padding-top: 8px ;
+    padding-top: 5px ;
 }
 
         /*        card1       */
@@ -2024,6 +2043,35 @@ main{
   justify-content: space-between;
   margin-bottom: 10px;
 }
+.price-info1 {
+  align-items:baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-top: 80px;
+}
+
+.dropdown {
+    padding-top: 10px;
+  padding-bottom: 10px;
+}
+.dropdown2 {
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.dropdown3 {
+  margin-top: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.price-info2 {
+  align-items:baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-top: 75px;
+}
 .price{
   display:flex;
   height: 10px;
@@ -2038,8 +2086,10 @@ main{
   font-family: "Nunito-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
-  font-size: 22px;
+  padding-top: 15px;
+  font-size: 18px;
   letter-spacing: 0;
+  padding-bottom: 5px;
   line-height: normal;
 }
 .price-per-month{
@@ -2049,7 +2099,8 @@ main{
   font-family: "Nunito-Medium", Helvetica;
   font-weight: 500;
   color: #000000;
-  font-size: 16px;
+  font-size: 14px;
+  padding-left: 25px;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -2076,7 +2127,7 @@ position: flex;
   font-family: var(--t2-font-family);
   font-weight: var(--t2-font-weight);
   color: #000000;
-  font-size: var(--t2-font-size);
+  font-size: 22px;
   letter-spacing: var(--t2-letter-spacing);
   line-height: var(--t2-line-height);
   font-style: var(--t2-font-style);
@@ -2088,7 +2139,7 @@ position: flex;
   font-family: "Nunito-Bold", Helvetica;
   font-weight: 700;
   color: #d3305b;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
   text-decoration: underline;
